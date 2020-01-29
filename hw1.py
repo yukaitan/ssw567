@@ -28,6 +28,10 @@ class Testclassify_triangle(unittest.TestCase):
         self.assertEqual('right and scalene', classify_triangle(3, 4, 5))
         self.assertEqual('right and scalene', classify_triangle(3, 5, 4))
         self.assertEqual('right and scalene', classify_triangle(4, 5, 3))
+        self.assertEqual('isosceles', classify_triangle(4, 4, 7))
+        self.assertEqual('isosceles', classify_triangle(10, 10, 15))
+        self.assertEqual('isosceles', classify_triangle(10, 10, 6))
+        
         self.assertEqual('scalene', classify_triangle(4, 5, 7))
         self.assertEqual('scalene', classify_triangle(5, 7, 8))
         self.assertEqual('not a triangle', classify_triangle(300, 6, 500))
